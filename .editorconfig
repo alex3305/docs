@@ -1,0 +1,17 @@
+# EditorConfig is awesome: https://EditorConfig.org
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{md,yml,yaml,json}]
+charset = utf-8
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[.vscode/settings.json]
+indent_style = space
+indent_size = 4
