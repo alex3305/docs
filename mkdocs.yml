@@ -1,5 +1,47 @@
-site_name: Alex's Docs
+site_name: Alex's Documentation
 
 theme:
   name: material
+
+  icon:
+    logo: fontawesome/solid/pepper-hot
+
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   
+  font:
+    text: Source Sans Pro
+    code: Source Code Pro
+    # text: Fira Sans
+    # code: Fira Mono
+
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - tables
+
+plugins:
+  - search
