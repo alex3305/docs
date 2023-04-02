@@ -1,47 +1,47 @@
-site_name: Alex's Documentation
+# Project information
+site_name: alxx.nl
+# site_url: https://docs.alxx.nl
+site_author: Alex van den Hoogen
+site_description: >
+  Compilation of my persondal documentation about Home Assistant, my homelab
+  and other interesting things.
 
+# Repository
+repo_name: alex3305/docs
+repo_url: https://github.com/alex3305/docs
+
+# Copyright
+copyright: Copyright &copy; 2020 - 2023 Alex van den Hoogen
+
+# Configuration
 theme:
   name: material
+  custom_dir: .overrides
 
   icon:
     logo: fontawesome/solid/pepper-hot
 
   palette: 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: purple
-      accent: orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: slate
+    primary: purple
+    accent: amber 
   
   font:
     text: Source Sans Pro
     code: Source Code Pro
-    # text: Fira Sans
-    # code: Fira Mono
 
   features:
     - navigation.indexes
-    - navigation.instant
     - navigation.tabs
     - navigation.top
     - navigation.tracking
 
+# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
   - tables
 
+# Plugins
 plugins:
   - search
