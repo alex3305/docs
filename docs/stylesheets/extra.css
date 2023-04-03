@@ -1,0 +1,22 @@
+[data-md-color-scheme="slate"] {
+    --md-hue: 310;
+}
+
+[data-md-color-primary=purple]:not([data-md-color-scheme=slate]) {
+    background-color: #fafafa;
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link, 
+.md-nav--secondary .md-nav__title {
+    background: transparent;
+    box-shadow: none;
+}
+
+.md-typeset h1 {
+    margin-bottom: 0.5rem;
+}
+
+.md-footer, .md-footer-meta {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: var(--md-shadow-z2); 
+}

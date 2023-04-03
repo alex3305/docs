@@ -1,4 +1,4 @@
-# Material for Mkdocs landing page
+# Custom landing page
 
 A very simple example on how you can setup your own Mkdocs Material Hero landing page.
 

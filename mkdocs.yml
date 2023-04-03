@@ -22,9 +22,22 @@ theme:
     logo: fontawesome/solid/pepper-hot
 
   palette: 
-    scheme: slate
-    primary: purple
-    accent: amber 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: amber 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   
   font:
     text: Source Sans Pro
@@ -36,11 +49,19 @@ theme:
     - navigation.top
     - navigation.tracking
 
+extra_css:
+  - stylesheets/extra.css
+
 # Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
   - tables
+  - pymdownx.highlight
+  - pymdownx.superfences 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # Plugins
 plugins:
