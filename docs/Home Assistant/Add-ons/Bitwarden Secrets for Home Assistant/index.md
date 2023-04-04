@@ -1,6 +1,6 @@
 # Bitwarden secrets for Home Assistant
 
-This page outlines my personal set up with [Bitwarden secrets for Home Assistant](https://alxx.nl/home-assistant-addons/blob/master/bitwarden-secrets/README.md).
+This page outlines my personal set up with [Bitwarden secrets for Home Assistant](https://github.com/alex3305/home-assistant-addons/blob/master/bitwarden-secrets/README.md).
 
 ## Vaultwarden installation
 

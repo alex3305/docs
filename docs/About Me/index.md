@@ -1,8 +1,3 @@
----
-hide:
-    - navigation
----
-
 # About me
 
 Hi 👋🏻, I'm Alex. A software developer, engineer and tech enthusiast from the Netherlands.
