@@ -1,3 +1,3 @@
-# [alxx.nl][https://alxx.nl]
+# [alxx.nl](https://alxx.nl)
 
 My personal documentation page.

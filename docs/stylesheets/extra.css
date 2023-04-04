@@ -12,6 +12,10 @@
     box-shadow: none;
 }
 
+.md-typeset { 
+    text-align: justify;
+}
+
 .md-typeset h1 {
     margin-bottom: 0.5rem;
 }

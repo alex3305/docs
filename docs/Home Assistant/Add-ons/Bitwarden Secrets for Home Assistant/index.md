@@ -1,10 +1,10 @@
-# Bitwarden secrets for Home Assistant set up
+# Bitwarden secrets for Home Assistant
 
 This page outlines my personal set up with [Bitwarden secrets for Home Assistant](https://alxx.nl/home-assistant-addons/blob/master/bitwarden-secrets/README.md).
 
-## Bitwarden installation
+## Vaultwarden installation
 
-You can easily install [Bitwarden RS](https://github.com/home-assistant-addons/addon-bitwarden) for Home Assistant from the Add-on Store. Bitwarden is a community maintained add-on available from the Home Assistant Community Add-ons repository.
+I opted for Vaultwarden, which is an alternative Bitwarden implementation in Rust. Vaultwarden is available as a [Home Assistant add-on](https://github.com/hassio-addons/addon-bitwarden).
 
 ## Home Assistant organization
 
@@ -22,9 +22,12 @@ You can use the Bitwarden password generator to generate a secure password for t
 
 ### Disable new registrations
 
-When you have Bitwarden exposed to the internet (ie. through a reverse proxy like [Traefik](https://alxx.nl/home-assistant-addons/tree/master/traefik)) I recommend disabling new user registration after you have created all of your users. This will keep unwelcome guests out of our local install.
+!!! info "Optional"
+    This step is optional and not required.
 
-You can do this by browsing to the Bitwarden RS suffixed by the `/admin/` path. So for instance: 'http://192.168.0.10:7878/admin/'. To access the admin panel you will need your personal access token which can be found in the add-on log.
+When you have Bitwarden exposed to the internet, I recommend disabling new user registration after you have created all of your users. This will keep unwelcome guests out of our local install.
+
+You can do this by browsing to the Bitwarden RS suffixed by the `/admin/` path. So for instance: 'http://homeassistant.lan:7878/admin/'. To access the admin panel you will need your personal access token which can be found in the add-on log.
 
 If the admin token isn't visible (anymore) in the Bitwarden RS log you can also retrieve it through Docker and SSH with the following command:
 
@@ -33,9 +36,6 @@ docker exec -it addon_a0d7b954_bitwarden cat /data/config.json | jq -r '.admin_t
 ```
 
 This will print your admin token.
-
-!!! note 
-    This is an optional step.
 
 ### Creating a Home Assistant organization entity
 
@@ -53,8 +53,8 @@ We are going to invite our earlier created Home Assistant user by clicking the *
 
 ![Invite local user](images/bitwarden-invite-user.png)
 
-!!! note 
-    We want this user to have access to all items!
+!!! info
+    We want this user to have access to all items.
 
 Finally we are going to confirm this user to have access to our Home Assistant organization. The user should automatically already have accepted the invite.
 
@@ -75,7 +75,7 @@ Follow these steps to get the add-on installed on your system:
 1. Navigate in your Home Assistant frontend to __Supervisor -> Add-on Store__
 2. Add this new repository by URL (`https://github.com/alex3305/home-assistant-addons`)
 3. Find the "Bitwarden secrets for Home Assistant" add-on and click it.
-4. Click on the "INSTALL" button
+4. Click on the **INSTALL** button
 
 ### Configuration
 
