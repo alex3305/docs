@@ -45,7 +45,6 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
-    - navigation.top
     - navigation.tracking
 
 extra_css:
