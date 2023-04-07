@@ -38,7 +38,7 @@ services:
 
 ## Notes
 
-!!! warning inline end 
+!!! warning
 
     These notes were checked and updated on 2023-04-07.
 
