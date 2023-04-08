@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2020 - 2023 Alex van den Hoogen
 # Configuration
 theme:
   name: material
-  custom_dir: .overrides
+  custom_dir: overrides
 
   icon:
     logo: fontawesome/solid/pepper-hot
@@ -43,9 +43,48 @@ theme:
     code: Source Code Pro
 
   features:
+    - content.code.copy
     - navigation.indexes
     - navigation.tabs
     - navigation.tracking
+
+nav:
+  - Home: index.md
+  - About me:
+    - aboutme/index.md
+    - Reddit Awards: aboutme/reddit_awards.md
+  - Home Assistant:
+    - homeassistant/index.md
+    - .gitignore: homeassistant/gitignore.md
+    - HACS: homeassistant/hacs.md
+    - Installation:
+      - homeassistant/install/index.md
+      - HAOS (VM): homeassistant/install/haos_vm.md
+      - Supervised: homeassistant/install/supervised.md
+    - Add-ons:
+      - Bitwarden Secrets for Home Assistant: 
+        - homeassistant/addons/bitwarden_secrets/index.md
+      - InfluxDB:
+        - homeassistant/addons/influxdb/index.md
+        - Backup and Restore: homeassistant/addons/influxdb/backup_and_restore.md
+        - Downsampling: homeassistant/addons/influxdb/downsampling.md
+      - VSCode: 
+        - homeassistant/addons/vscode/index.md
+    - Automations:
+      - Adaptive Lighting: homeassistant/automations/adaptive_lighting.md
+    - Integrations:
+      - Proxmity: homeassistant/integrations/proximity.md
+  - Homelab:
+    - Hardware: homelab/hardware.md
+    - QNAP NAS:
+      - Enable Disk Spindown: homelab/qnap/enable_disk_spindown.md
+      - Mounting QNAP disks: homelab/qnap/mounting_qnap_disks.md
+  - Self-Hosted:
+    - selfhosted/index.md
+    - AdGuard Home:
+      - AdGuard Home Sync: selfhosted/adguardhome/adguardhome_sync.md
+    - Material for MkDocs:
+      - Custom landing page: selfhosted/mkdocs_material/custom_landing_page.md
 
 extra_css:
   - stylesheets/extra.css
@@ -64,4 +103,20 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alex3305
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/alex3305
+    - icon: fontawesome/brands/linkedin-in
+      link: https://www.linkedin.com/in/alex3305
+    - icon: fontawesome/brands/reddit-alien
+      link: https://www.reddit.com/u/alex3305/
+
