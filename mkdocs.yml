@@ -53,13 +53,14 @@ extra_css:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.details
-  - tables
   - pymdownx.highlight
   - pymdownx.superfences 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji 
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
 
 # Plugins
 plugins:
