@@ -18,9 +18,6 @@ theme:
   name: material
   custom_dir: overrides
 
-  icon:
-    logo: fontawesome/solid/pepper-hot
-
   palette: 
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -87,7 +84,7 @@ nav:
       - Custom landing page: selfhosted/mkdocs_material/custom_landing_page.md
 
 extra_css:
-  - stylesheets/extra.css
+  - custom.css
 
 # Extensions
 markdown_extensions:

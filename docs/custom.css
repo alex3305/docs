@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 [data-md-color-scheme="slate"] {
     --md-hue: 310;
 }
@@ -23,4 +25,19 @@
 .md-footer, .md-footer-meta {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: var(--md-shadow-z2); 
+}
+
+header a.md-header__button.md-logo {
+    display: none;
+}
+
+[dir=ltr] .md-header__title {
+    margin-left: 0.5rem;
+    padding-top: 0.1rem;
+}
+
+.md-header__title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
