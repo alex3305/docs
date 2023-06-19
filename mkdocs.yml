@@ -49,7 +49,6 @@ nav:
   - Home: index.md
   - About me:
     - aboutme/index.md
-    - Reddit Awards: aboutme/reddit_awards.md
   - Home Assistant:
     - homeassistant/index.md
     - .gitignore: homeassistant/gitignore.md
